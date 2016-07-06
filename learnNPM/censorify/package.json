@@ -1,9 +1,17 @@
 {
 	"author": "guangyi",
-	"name": "censorify",
+	"name": "censorifyGuangyi",
 	"version": "0.1.1",
 	"description": "Censors words out of text",
 	"main": "censortext",
+	"repository":{
+		"type": "git",
+		"url": "https://github.com/zengguangyi/learnAngularJS/tree/master/learnNPM/censorify"
+	},
+	"keywords": [
+		"censor",
+		"words"
+	],
 	"dependencies": {},
 	"engines": {
 		"node": "*"
