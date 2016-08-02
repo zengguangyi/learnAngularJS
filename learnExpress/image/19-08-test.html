@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>body-parser test</title>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+</head>
+<body>
+	<button id="btn">click</button>
+	<script type="text/javascript">
+		$("#btn").click(function() {
+			$.ajax({
+				url: '/json',
+				type: 'POST',
+				dataType: 'json',
+				data: {test: 'value1'},
+				success: function(data){
+					console.log(data);
+				}
+			})
+			.done(function() {
+				console.log("success");
+			})
+			.fail(function() {
+				console.log("error");
+			})
+			.always(function() {
+				console.log("complete");
+			});
+			
+		});
+	</script>
+</body>
+</html>
